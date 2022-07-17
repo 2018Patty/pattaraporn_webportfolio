@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Sarabun:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Suez+One&display=swap" rel="stylesheet">
+    
+    <script src="https://kit.fontawesome.com/46c370176b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="myStyle.css">
+    <style>
+        .container{
+            width: 80%;
+            margin: 0 auto;
+        }
+        .header{
+            display: flex;
+            
+        }
+        .description{
+           
+        }
+        .prepatation{
+            display: flex;
+            
+        }
+        .preBox{
+            font-size: 12px;
+            display: flex;
+            margin-right: 50px;
+        }
+        .preIcon{
+            margin: 10px;
+            color: #e76f51;
+        }
+        .prep{
+            list-style: none;
+            padding-left: 0;
+        }
+        .prep li{
+            margin-bottom: 5px;
+        }
+        .menu li{
+            font-size: 14px;
+            letter-spacing: 2px;
+        }
+        table {
+            border-spacing: 5px;
+            font-size: 11px;
+            
+        }
+        .nutrition th{
+            background-color: #e76f51;
+            padding: 10px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+        .nutrition td{
+            text-align: center;
+            background-color: #fff3b0;
+            padding: 10px;
+        }
+        .main{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .ingredients{
+            flex: 1;
+            margin-right: 20px;
+        }
+        .method{
+            flex: 2;
+            margin-right: 20px;
+        }
+        .ingreList {
+            margin: 10px 0px;
+            padding: 0;
+        }
+        .ingreList li{
+            list-style-type: none;
+            margin: 5px 0px;
+            padding: 10px 10px;
+            border-bottom: 1px dotted grey;
+        }
+        .method {
+            margin: 0;
+            padding: 0;
+        }
+        .method li{
+            margin: 5px 0px;
+            padding: 10px 0px;
+            border-bottom: 1px solid grey;
+        }
+        @import url('https://fonts.googleapis.com/css?family=Abril+Fatface');
+
+        ol {
+            list-style: none;
+            counter-reset: my-awesome-counter;
+            /*display: flex;
+            flex-wrap: wrap;*/
+            margin: 0;
+            padding: 0;
+        }
+        ol li {
+            counter-increment: my-awesome-counter;
+            display: flex;
+            width: 60%;
+            font-size: 0.8rem;
+            margin-bottom: 0.5rem;
+            line-height: 18px;
+            text-align: justify;
+            
+        }
+        ol li::before {
+            content: "0" counter(my-awesome-counter);
+            font-weight: bold;
+            font-size: 3rem;
+            margin-right: 0.5rem;
+            font-family: 'Abril Fatface', serif;
+            line-height: 1;
+        }
+        .more{
+            
+            font-size: 12px;
+            margin-left: 20px;
+        }
+        .footer{
+            line-height: 10px;
+            text-align: center;
+            font-size: 12px;
+            margin-top: 50px;
+        }
+        .heading{
+            font-size: 13px;
+            font-weight: 700;
+        }
+
+    </style>
+</head>
+
+<body>
+    <!--Basic HTML-->
+    <div class="container">
+        <div class="header">
+            <img class="menuPhoto" src="brownie.jpg" alt="brownie">
+            <div class="description">
+                <h1 class="title">Bourbon Black Cherry& bacon brownies</h1>
+                <p>By Emma Freud <a class="more" href="https://www.bbcgoodfood.com/recipes/emmas-almost-famous-bourbon-black-cherry-bacon-brownies" target="_blank">See More</a></p>
+                <ul class="menu">
+                    <li><a href="#ingredients">Ingredients | </a></li>
+                    <li><a href="#method">Method</a></li>
+                </ul>
+                
+                <div class="prepatation">
+                    <div class="preBox">
+                        <i class="fas fa-clock fa-3x preIcon"></i>
+                        
+                        <ul class="prep">
+                            <li>PREP: 25 MINS</li>
+                            <li>COOK: 55 MINS</li>
+                        </ul>
+                    </div>
+                    <div class="preBox">
+                        
+                        <i class="fas fa-bread-slice fa-3x preIcon"></i>
+                        <ul class="prep">
+                            <li>Easy</li>
+                            
+                        </ul>
+                    </div>
+                    <div class="preBox">
+                        <i class="fas fa-utensils fa-3x preIcon"></i>
+                        
+                        <ul class="prep">
+                            <li>Cuts into 12</li>
+                            
+                        </ul>
+                    </div>
+                </div>
+                <p class="intro">These American traybake brownies include all of our favourite things, chocolate, booze and bacon - pure decadence Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis non, repellat quas excepturi soluta nemo tenetur? Ipsa voluptas placeat odio aliquam eos commodi enim ea corrupti. Molestias, earum. Numquam, quibusdam!
+                </p>
+                <p class="heading">Nutrition Facts</p>
+                <table class="nutrition">
+                    <tr>
+                        <th>kcal</th>
+                        <th>fat</th>
+                        <th>saturates</th>
+                        <th>carbs</th>
+                        <th>sugars</th>
+                        <th>fibre</th>
+                        <th>protein</th>
+                        <th>salt</th>
+                    </tr>
+                    <tr>
+                        <td>456</td>
+                        <td>23g</td>
+                        <td>13g</td>
+                        <td>50g</td>
+                        <td>36g</td>
+                        <td>3g</td>
+                        <td>6g</td>
+                        <td>0.5g</td>
+                    </tr>
+                </table>
+                
+            </div>
+            
+
+            
+        </div>
+        
+        
+        <div class="main">
+            <div class="ingredients">
+                <h2 id="ingredients">Ingredients</h2>
+                <ul class="ingreList">
+                    <li>200g dried sour cherries</li>
+                    <li>100ml bourbon</li>
+                    <li>1 tsp cinnamon</li>
+                    <li>50ml maple syrup</li>
+                    <li>6 rashers smoked streaky bacon</li>
+                    <li>your favourite brownie mixture (see Goes well with for our Best-ever brownies recipe)</li>
+                    <li>a little cocoa powder, for dusting</li>
+                </ul>
+            </div>
+            
+            <div class="method">
+                <h2 id="method">Method</h2>
+                <ol>
+                    <li>Heat oven to 180C/160C fan/gas 4. In a small pan, warm (don’t boil) the cherries in the bourbon, then leave to infuse for at least 20 mins.</li>
+                    <li>Meanwhile, mix the cinnamon with the maple syrup and brush both sides of the bacon with it. Lay the rashers on a rack set over a roasting tin covered in foil and roast, basting occasionally with the syrup, for about 20 mins until they look nicely browned. Take them out and leave to cool completely on the rack while you make the brownie mixture.</li>
+                    <li>Follow your chosen recipe to make the brownie mixture and heat oven to the required temperature. Drain the bourbon-soaked cherries and add them to the brownie mixture. Chop the bacon into little pieces (it will crumble very easily) and add to the mixture too, stirring everything together. Bake as per the recipe, then leave to cool completely before dusting with cocoa and slicing into squares.</li>
+                </ol>
+            </div>
+            
+        </div>
+   
+     
+
+    
+    
+
+        <div class="footer">
+            <p class="intro">Thank you for your support</p>
+            <p>
+                Prince of Songkla University, Surat Thani Campus
+                31 Moo 6 Makamtia, Muang, Surat Thani 84000
+                Tel. 077-288040 E-mail: HappyBrownie@gmail.com
+            </p>
+            <p> Facebook:  HappyBrownie , Instagram: HappyBrownie, Line: @HappyBrownie</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
